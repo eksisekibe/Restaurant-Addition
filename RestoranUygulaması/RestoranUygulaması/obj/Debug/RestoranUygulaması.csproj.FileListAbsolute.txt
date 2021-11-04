@@ -1,0 +1,13 @@
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\bin\Debug\RestoranUygulaması.exe
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\bin\Debug\RestoranUygulaması.pdb
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.frmGiris.resources
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.Properties.Resources.resources
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.exe
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.pdb
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.frmMenu.resources
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.frmMasalar.resources
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.frmSiparis.resources
+C:\Users\Dell\source\repos\RestoranUygulaması\RestoranUygulaması\obj\Debug\RestoranUygulaması.frmBill.resources

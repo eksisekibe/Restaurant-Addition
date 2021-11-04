@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF77C49B-B31F-4CA6-9424-1FD8FCECCA19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RestoranUygulaması</RootNamespace>
+    <AssemblyName>RestoranUygulaması</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cAdisyon.cs" />
+    <Compile Include="cGenel.cs" />
+    <Compile Include="cMasalar.cs" />
+    <Compile Include="cPersonelHareketleri.cs" />
+    <Compile Include="cPersoneller.cs" />
+    <Compile Include="cSiparis.cs" />
+    <Compile Include="cUrunCesitleri.cs" />
+    <Compile Include="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKasaIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKasaIslemleri.Designer.cs">
+      <DependentUpon>frmKasaIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasalar.Designer.cs">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaporlar.Designer.cs">
+      <DependentUpon>frmRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparis.Designer.cs">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasalar.resx">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparis.resx">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisbutonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkısbutonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masabutonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyonbutonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paketservisbutonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteributonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mutfakbutonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasabutonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raporbutonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarresmi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilitbutonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menucikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masalarbutonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masaicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geridonbutonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikisicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acıkrezervemasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosmasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervemasa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolumasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anayemek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anayemekicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iceceklericon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecekler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatlılar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödemeyap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparisiconu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ıptalet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corbaicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanresmi7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
